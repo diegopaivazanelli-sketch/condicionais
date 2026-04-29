@@ -236,18 +236,112 @@
 
 // estoque de produtos
 
-const estoque = {
-    "notebook": 15,
-    "mouse": 50,
-    "teclado": 30,
-    "monitor": 8,
-    "webcam": 22
-}
-for (const produto in estoque){
-    const quantidade = estoque [produto]
-    if (quantidade <10) {
-        console.log(`${produto}: ${quantidade} estoque abaixo!`)
-    } else {
-        console.log(`${produto}: ${quantidade} estoque acima!`)
-    }
-}
+// const estoque = {
+//     "notebook": 15,
+//     "mouse": 50,
+//     "teclado": 30,
+//     "monitor": 8,
+//     "webcam": 22
+// }
+// for (const produto in estoque){
+//     const quantidade = estoque [produto]
+//     if (quantidade <10) {
+//         console.log(`${produto}: ${quantidade} estoque abaixo!`)
+//     } else {
+//         console.log(`${produto}: ${quantidade} estoque acima!`)
+//     }
+// }
+
+//carrinho de compra
+
+//Array
+
+// const carrinho = [
+//     {produto: "camiseta", preco: 49.90, quantidade: 2},
+//     {produto: "calça jeans", preco: 129.90, quantidade: 1},
+//     {produto: "tênis", preco: 500.90, quantidade: 1},
+// ];
+
+// let total = 0;
+
+// console.log ("Carrinho de compras:\n")
+// for (const item of carrinho) {
+//     const subtotal = item.preco * item.quantidade
+
+//     total += subtotal
+
+//     console.log(`${item.produto} (${item.quantidade}x) - R$ ${subtotal.toFixed(2)}`)
+// }
+// console.log("\n" + "=".repeat(40));
+// console.log(`TOTAL: R$ ${total.toFixed(2)}`)
+
+
+//BREAK
+
+// const numeros = [5, 12, 8, 3, 19, 7, 25];
+// const procurado = 19;
+// console.log("Procurando o número", procurado);
+// for(const num of numeros) {
+//     console.log("Verificando:", num);
+//     if (num === procurado) {
+//         console.log("Encontrado!!")
+//         break;
+//     }
+// }
+// console.log("Loop terminou!")
+
+
+// //senha com limite de 3 tentativas
+// const senhaCorreta = "abc123";
+// const maxTentativas = 3;
+// for (let tentativa = 1; tentativa <= maxTentativas; tentativa++){
+//     const senha = prompt(`tentativa ${tentativa}/${maxTentativas} - Digite sua senha:`);
+
+//     if (senha === senhaCorreta) {
+//         console.log("Acesso liberado");
+//         break;
+//     } else {
+//         console.log("Senha incorreta!");
+
+//         if (tentativa === maxTentativas){
+//             console.log("Conta bloqueada!")
+//         }
+//     }
+// }
+
+// continue
+// for(let i = 1; i <=10; i++) {
+//     if(i % 2 === 0) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// const alunos = [
+//     {nome: "ana", nota: 8.5},
+//     {nome: "bruno", nota: 5.0},
+//     {nome: "carlos", nota: 9.0},
+//     {nome: "diana", nota: 4.5},
+//     {nome: "eduardo", nota: 7.5},
+// ];
+// console.log("Alunos aprovados:\n")
+// for (const aluno of alunos); {
+//     if (aluno.nota < 7) {
+//         continue;
+//     }
+//     console.log(`${aluno.nome} - nota: ${aluno.nota}`);
+// }
+
+// const frase = prompt("Digite uma frase:");
+// const vogais = "aeiouAEIOU";
+// let contador = 0;
+// let vogaisEncontradas = [];
+// for (const letra of frase) {
+//     if(vogais.includes(letra)){
+//         contador++
+//         vogaisEncontradas.push(letra)
+//     }
+// }
+// console.log(`\n Frase: "${frase}"`);
+// console.log(`vogais encontradas: ${contador}`);
+// console.log(`Vogais encontradas: ${vogaisEncontradas}`);
