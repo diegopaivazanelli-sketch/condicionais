@@ -254,7 +254,7 @@
 
 //carrinho de compra
 
-//Array
+// ============================================ Array ============================== //
 
 // const carrinho = [
 //     {produto: "camiseta", preco: 49.90, quantidade: 2},
@@ -276,7 +276,7 @@
 // console.log(`TOTAL: R$ ${total.toFixed(2)}`)
 
 
-//BREAK
+// ======================================== BREAK ================================ //
 
 // const numeros = [5, 12, 8, 3, 19, 7, 25];
 // const procurado = 19;
